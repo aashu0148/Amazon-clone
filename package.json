@@ -1,5 +1,5 @@
 {
-  "name": "p-1",
+  "name": "amazon-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +36,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "no desc",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aashu0148/Amazon-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aashu0148/Amazon-clone/issues"
   }
 }
