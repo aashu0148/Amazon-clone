@@ -4,7 +4,7 @@ function Product({ id, title, rating, price, image }) {
     const stars = [];
     for (let i = 0; i < rating; ++i) {
         stars.push(
-            (<span key={id / (i + 1)}>⭐</span>)
+            (<span key={i}>⭐</span>)
         )
     }
     return (
