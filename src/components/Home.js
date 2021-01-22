@@ -51,7 +51,7 @@ class Home extends Component {
                     />
                     <Product
                         id="41e23r3"
-                        title="Hawkins Contura Hard Anodised Aluminium Pressure Cooker, 3.5 Litres, Black"
+                        title="Hawkins Contura Hard Anodised Aluminium Pressure Cooker, 3.5 Litres, Black blue yellow orange pink sjyblue voilet brown coralredtomato"
                         price={1200}
                         image="https://m.media-amazon.com/images/I/51RNzqVxOvL._AC_UL320_.jpg"
                         rating={4}
