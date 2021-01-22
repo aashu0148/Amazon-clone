@@ -39,15 +39,16 @@
       "last 1 safari version"
     ]
   },
-  "description": "no desc",
+  "description": "Amazon Clone",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aashu0148/Amazon-clone.git"
+    "url": "git+https://github.com/Nitish0007/Amazon-clone.git"
   },
-  "author": "",
+  "author": "Nitish",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aashu0148/Amazon-clone/issues"
+    "url": "https://github.com/Nitish0007/Amazon-clone/issues"
+
   }
 }
