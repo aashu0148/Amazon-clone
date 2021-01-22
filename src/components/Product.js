@@ -1,8 +1,6 @@
 import React from 'react'
 import './Product.css'
 
-import { connect } from 'react-redux'
-
 
 function Product({ id, title, rating, price, image }) {
     const stars = [];
