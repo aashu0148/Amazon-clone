@@ -1,24 +1,33 @@
 .product {
-  min-width: 300px;
+  width: 300px;
+  height: 400px;
+  max-width: 350px;
+  max-height: 450px;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin: 15px 10px;
   z-index: 10;
 }
 .product_title {
   font-size: 1.2rem;
-  max-width: 300px;
+  max-width: 270px;
+  overflow: hidden;
 }
 .product img {
   object-fit: contain;
-  width: 100%;
-  max-height: 200px;
-  margin: 15px 0;
+  margin: 10px 0;
+  background: violet;
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
 }
 .product button {
   background: #f0c14b;
   border-color: #a88734 #9c7e31 #f0c14b;
   outline: none;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px;
 }
