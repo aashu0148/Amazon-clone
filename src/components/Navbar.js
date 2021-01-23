@@ -3,24 +3,24 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 function Navbar() {
     return (
-        <div className="nav">
+        <div className="navbar_nav">
 
-        <div className=" nav_navbar">
-            <div className="logo">
+        <div className=" navbar_navbar">
+            <div className="navbar_logo">
             <Link to="/">
                 <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="not found"></img>
                 <span>.in</span>
             </Link>
             </div>
 
-            <div className="nav_navbar_options">
-                <span className="nav_navbar_options_firstLine hello">Hello</span>
-                <span className="nav_navbar_options_secondLine"><i class="fa fa-map-marker" aria-hidden="true"></i> Select your address</span>
+            <div className="navbar_options">
+                <span className="navbar_firstLine hello">Hello</span>
+                <span className="navbar_secondLine"><i className="fa fa-map-marker" aria-hidden="true"></i> Select your address</span>
             </div>
 
-            <div className="nav_navbar_search-bar">
-            <select className="navbar_search-bar dropdown">
-                <option value="search_all-categories">All Categories</option>
+            <div className="navbar_search-bar">
+            <select className="navbar_search-bar  navbar_dropdown">
+                <option value="search_all-categories">All</option>
                 <option value="search_todays-deals">Deals</option>
                 <option value="search_alexa-skills">Alexa Skills</option>
                 <option value="search_amazon-devices">AmazonDevices</option>
@@ -43,36 +43,71 @@ function Navbar() {
                 <i className="fas fa-search"></i>
             </div>
 
-            <div className="nav_navbar_options">
-                <span className="nav_navbar_options_lang">ENG <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div className="navbar_options">
+                <span className="navbar_lang">ENG <i className="fa fa-caret-down" aria-hidden="true"></i></span>
             </div>
 
-            <div className="nav_navbar_options">
-            <span className="nav_navbar_options_firstLine">Hello, Sign in</span>
-                <span className="nav_navbar_options_secondLine"> Account <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div className="navbar_options">
+            <span className="navbar_firstLine">Hello, Sign in</span>
+                <span className="navbar_secondLine"> Account <i className="fa fa-caret-down" aria-hidden="true"></i></span>
             </div>
 
-            <div className="nav_navbar_options">
-            <span className="nav_navbar_options_firstLine">Returns</span>
-                <span className="nav_navbar_options_secondLine"> &Orders</span>
+            <div className="navbar_options">
+            <span className="navbar_firstLine">Returns</span>
+                <span className="navbar_secondLine"> &Orders</span>
             </div>
 
-            <div className="nav_navbar_options Cart">
-                <span className="nav_navbar_options_firstLine cart-item">0</span>
-                <span className="nav_navbar_options_secondLine cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <div className="navbar_options navbar_Cart">
+                <span className="navbar_firstLine navbar_cart-item">0</span>
+                <span className="navbar_secondLine navbar_cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
             </div>
 </div>
 
-       <div className="nav_navBottom">
-           <div className="nav_navBottom_left">
-               <div className="nav_navBottom_left_burger">
-               <i class="fas fa-bars"></i>
+       <div className="navbar_navBottom">
+           <div className="navbar_left">
+               <div className="navbar_burger">
+               <i className="fas fa-bars"></i>
                </div>
                <span>All</span>
            </div>
-           <div className="nav_navBottom_middle">
-               <div className="nav_navBottom_middle_"></div>
+
+           <div className="navbar_middle">
+                   
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                       <div className="navbar_item">
+                       <Link to="/">
+                         <span>Best Seller</span>
+                   </Link>
+                       </div>
+                 
+                   
+                 
            </div>
+
        </div>
        
      </div>
