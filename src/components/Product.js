@@ -18,8 +18,6 @@ function Product({ id, title, rating, price, image, ...props }) {
             </div>
             <p className="product_title">{title}</p>
             <div className="product_stars">{stars}</div>
-
-            <img src={image} alt="can't load :(" />
             <button onClick={() => {
                 props.addToBasketHandler()
                 const data = {
@@ -30,8 +28,7 @@ function Product({ id, title, rating, price, image, ...props }) {
                     price
                 }
                 props.fillBasketHandler(data)
-            }
-            }>Add to basket</button>
+            }}>Add to basket</button>
         </div>
     )
 }
