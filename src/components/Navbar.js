@@ -2,7 +2,6 @@ import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-
 function Navbar(props) {
     return (
         <div className="nav">
@@ -57,11 +56,12 @@ function Navbar(props) {
                     <span className="nav_navbar_options_firstLine">Returns</span>
                     <span className="nav_navbar_options_secondLine"> &Orders</span>
                 </div>
-
-                <div className="nav_navbar_options Cart">
-                    <span className="nav_navbar_options_firstLine cart-item">{props.baskterCounter}</span>
-                    <span className="nav_navbar_options_secondLine cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                </div>
+                <Link to="/checkout">
+                    <div className="nav_navbar_options Cart">
+                        <span className="nav_navbar_options_firstLine cart-item">{props.baskterCounter}</span>
+                        <span className="nav_navbar_options_secondLine cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    </div>
+                </Link>
             </div>
 
             <div className="nav_navBottom">
@@ -82,7 +82,7 @@ function Navbar(props) {
 
 const mapToProps = state => {
     return {
-        baskterCounter: state.basketItems
+        baskterCounter: state.basketCount
     }
 }
 

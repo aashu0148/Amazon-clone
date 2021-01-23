@@ -4,14 +4,15 @@
   position: sticky;
   width: 100%;
   font-family: "Ubuntu", sans-serif;
+  position: relative;
 }
 .nav_navbar {
   position: sticky;
+  top: 0;
   background: #0f1111;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
   z-index: 100;
   font-size: 0.85rem;
 }
