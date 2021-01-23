@@ -1,10 +1,8 @@
 import React from 'react'
 import './Product.css'
-
 import { connect } from 'react-redux'
-
-
-function Product({ id, title, rating, price, image }) {
+import * as actionTypes from '../store/action'
+function Product({ id, title, rating, price, image, ...props }) {
     const stars = [];
     for (let i = 0; i < rating; ++i) {
         stars.push(
@@ -20,9 +18,23 @@ function Product({ id, title, rating, price, image }) {
             </div>
             <p className="product_title">{title}</p>
             <div className="product_stars">{stars}</div>
-            <button>Add to basket</button>
+
+            <img src={image} alt="can't load :(" />
+            <button onClick={props.addToBasketHandler}>Add to basket</button>
+
         </div>
     )
 }
 
-export default Product
+const mapStateToProps = (state) => {
+    return {
+
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToBasketHandler: () => dispatch({ type: actionTypes.ADD_TO_BASKET })
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Product)

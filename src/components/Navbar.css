@@ -1,42 +1,119 @@
-.navbar {
-  background: rgb(2, 4, 36);
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+.nav_navbar {
+  position: sticky;
+  background: #0f1111;
   display: flex;
   align-items: center;
-  position: sticky;
+  justify-content: center;
   top: 0;
   z-index: 100;
+  font-size: 0.85rem;
 }
-.navbar img {
+.logo img {
   width: 100px;
-  margin: 0px 20px;
-  margin-top: 19px;
   cursor: pointer;
 }
-.navbar_search-bar {
+.logo {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: -5px;
+  margin: 15px 20px;
+}
+.logo span {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+}
+.nav_navbar_search-bar {
   display: flex;
   flex: 1;
   align-items: center;
 }
-.navbar_search-bar input {
+.nav_navbar_search-bar input {
   height: 100%;
   width: 100%;
   border: none;
   outline: none;
   padding: 10px;
 }
-.navbar_search-bar i {
-  background: orange;
+.nav_navbar_search-bar i {
+  background: rgb(253, 197, 92);
   padding: 10px;
+  height: 36.5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  outline: rgb(253, 197, 92);
 }
-.navbar_options {
+.nav_navbar_options {
   padding: 0 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav_navbar_options_firstLine {
+  color: #cac7c7;
+}
+.hello {
+  padding-left: 12px;
+}
+.nav_navbar_options_secondLine {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  float: left;
 }
 .navbar_link {
-  color: #fff;
+  color: rgb(248, 245, 245);
   padding: 0 10px;
   text-decoration: none;
+}
+.dropdown {
+  height: 36.5px;
+  width: fit-content;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgb(241, 239, 239);
+  text-decoration: none;
+  outline-style: none;
+  text-underline-offset: none;
+}
+.nav_navbar_options_lang {
+  color: white;
+}
+.Cart {
+  align-items: center;
+}
+.cart-item {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: orange;
+}
+.cart {
+  font-size: 1.8rem;
+}
+.nav_navBottom {
+  display: flex;
+  width: 100%;
+  background: #252929;
+  align-items: center;
+}
+.nav_navBottom_left {
+  display: flex;
+  margin: 0.8rem;
+  color: white;
+}
+.nav_navBottom_left_burger {
+  margin-right: 0.4rem;
 }
