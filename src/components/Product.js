@@ -1,10 +1,14 @@
 import React from 'react'
 import './Product.css'
+
+import { connect } from 'react-redux'
+
+
 function Product({ id, title, rating, price, image }) {
     const stars = [];
     for (let i = 0; i < rating; ++i) {
         stars.push(
-            (<span key={id / (i + 1)}>⭐</span>)
+            (<span key={i}>⭐</span>)
         )
     }
     return (
@@ -16,7 +20,7 @@ function Product({ id, title, rating, price, image }) {
             </div>
             <div className="product_stars">{stars}</div>
             <img src={image} alt="can't load :(" />
-            <button >Add to basket</button>
+            <button>Add to basket</button>
         </div>
     )
 }
