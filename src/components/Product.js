@@ -13,13 +13,13 @@ function Product({ id, title, rating, price, image }) {
     }
     return (
         <div className="product" id={id}>
-            <p className="product_title">{title}</p>
+            <img src={image} alt="can't load :(" />
             <div className="product_price">
                 <small>Rs</small>
                 <strong>{price}</strong>
             </div>
+            <p className="product_title">{title}</p>
             <div className="product_stars">{stars}</div>
-            <img src={image} alt="can't load :(" />
             <button>Add to basket</button>
         </div>
     )
