@@ -17,7 +17,7 @@ function checkout(props) {
                 <h2>Shopping Cart</h2>
                 <hr></hr>
                 {items}
-                <h2>Sub total</h2>
+                <br></br>
             </div>
             <div className="checkout_proceed">
                 lorem23

@@ -9,6 +9,7 @@
 
 .checkout-item_desc {
   min-width: 250px;
+  text-align: start;
 }
 .checkout-item_desc a {
   color: rgb(28, 94, 236);
@@ -23,6 +24,18 @@
   color: green;
   font-size: 0.8rem;
 }
+.checkout-item_qty {
+  display: flex;
+  align-items: center;
+}
+.checkout-item_qty button {
+  margin: 5px;
+  padding: 0 3px;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .checkout-item_image img {
   max-width: 150px;
   object-fit: contain;

@@ -6,7 +6,7 @@ import Checkout from './components/checkout'
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="App">
         <Switch>
           <Route path="/login">
             <Navbar />
