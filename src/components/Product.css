@@ -1,5 +1,5 @@
 .product {
-  width: 300px;
+  width: 340px;
   height: 400px;
   max-width: 350px;
   max-height: 450px;
@@ -23,6 +23,7 @@
   max-width: 270px;
   max-height: 80px;
   overflow: hidden;
+  cursor: pointer;
 }
 .product img {
   object-fit: contain;
@@ -48,4 +49,10 @@
 }
 .product button:hover {
   background: linear-gradient(180deg, #f0c14be0 0%, #f0c14b 100%);
+}
+
+@media (max-width: 1095px) {
+  .product {
+    width: 300px;
+  }
 }

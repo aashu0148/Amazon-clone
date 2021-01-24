@@ -14,7 +14,10 @@ function checkoutItem({ id, image, price, title, qty, ...props }) {
                     <div>
 
                         <Link to="/product">
-                            {title}
+                            <div className="checkout-item_title">
+
+                                {title}
+                            </div>
                         </Link>
                         <p>in stock</p>
                         <div className="checkout-item_qty">
