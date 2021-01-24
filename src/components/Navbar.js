@@ -7,16 +7,16 @@ function Navbar() {
 
         <div className="navbar_navbar">
             <div className="navbar_logo">
-            <Link to="/">
+            <Link to="./home">
                 <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="not found"></img>
                 <span>.in</span>
             </Link>
             </div>
 
-            <div className="navbar_options">
+            {/* <div className="navbar_options">
                 <span className="navbar_firstLine hello">Hello</span>
                 <span className="navbar_secondLine"><i className="fa fa-map-marker" aria-hidden="true"></i> Select your address</span>
-            </div>
+            </div> */}
 
             <div className="navbar_search-bar">
             <select className="navbar_search-bar  navbar_dropdown">
@@ -47,10 +47,12 @@ function Navbar() {
                 <span className="navbar_lang">ENG <i className="fa fa-caret-down" aria-hidden="true"></i></span>
             </div>
 
+            <Link to="./Login">
             <div className="navbar_options">
             <span className="navbar_firstLine">Hello, Sign in</span>
                 <span className="navbar_secondLine"> Account <i className="fa fa-caret-down" aria-hidden="true"></i></span>
             </div>
+            </Link>
 
             <div className="navbar_options">
             <span className="navbar_firstLine">Returns</span>
@@ -114,11 +116,6 @@ function Navbar() {
     )
 }
 
-
-
-// let scrollNav = () => {
-//     if(window.scrollY > navbar)
-// }
 
 export default Navbar;
 

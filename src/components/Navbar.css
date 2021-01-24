@@ -66,7 +66,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+.navbar_o
 .navbar_firstLine{
+  text-decoration: none;
   color: #cac7c7;
 }
 .hello{
