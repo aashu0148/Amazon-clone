@@ -1,21 +1,33 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import CheckoutItem from './checkout-item'
+import './checkout.css'
 
 function checkout(props) {
-    const dummy = props.basket.map((e, i) => {
-        return (<div key={i}>
-            <h3>{e.id}</h3>
-            <h3>{e.price}</h3>
-            <h3>{e.image}</h3>
-            <h3>{e.title}</h3>
-            <br></br>
-        </div>)
+    const items = props.basket.map((e, i) => {
+        return (
+            <CheckoutItem key={i} id={e.id} price={e.price} title={e.title} image={e.image} />
+        )
     })
     return (
         <div className="checkout">
-            {dummy}
-            <h1>Checkout Page</h1>
-        </div>
+            <div className="checkout_items">
+                <h2>Shopping Cart</h2>
+                <hr></hr>
+                {items}
+                <h2>Sub total</h2>
+            </div>
+            <div className="checkout_proceed">
+                lorem23
+                ksandjsf
+                jqrbwe
+                fjbw
+                efbuweifb
+                weufb
+                wef
+            </div>
+
+        </div >
     )
 }
 

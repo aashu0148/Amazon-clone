@@ -1,0 +1,9 @@
+.checkout {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 5fr 1fr;
+}
+
+.checkout_items {
+  background: #fff;
+}
