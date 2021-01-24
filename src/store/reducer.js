@@ -71,10 +71,11 @@ const reducer = (state = initialState, action) => {
         case actionTypes.DELETE_ITEM_FROM_BASKET:
             {
                 let myBasket = { ...state.basket }
+                let qty = myBasket[id].qty;
                 delete myBasket[id]
                 return {
                     ...state,
-                    basketCount: state.basketCount - 1,
+                    basketCount: state.basketCount - qty,
                     basket: myBasket
                 }
             }

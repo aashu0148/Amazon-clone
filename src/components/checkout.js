@@ -14,19 +14,16 @@ function checkout(props) {
     return (
         <div className="checkout">
             <div className="checkout_items">
-                <h2>Shopping Cart</h2>
+                <div className="checkout_heading">Shopping Cart</div>
+                <p>Price</p>
                 <hr></hr>
                 {items}
                 <br></br>
             </div>
             <div className="checkout_proceed">
-                lorem23
-                ksandjsf
-                jqrbwe
-                fjbw
-                efbuweifb
-                weufb
-                wef
+                <h3>Subtotal (10 items):</h3>
+                <h3><b>Rs 89000</b></h3>
+                <button>Proceed to Buy</button>
             </div>
 
         </div >

@@ -11,20 +11,23 @@ function checkoutItem({ id, image, price, title, qty, ...props }) {
                     <img src={image} alt="img not found:("></img>
                 </div>
                 <div className="checkout-item_desc">
-                    <Link to="/product">
-                        {title}
-                    </Link>
-                    <p>in stock</p>
-                    <div className="checkout-item_qty">
-                        Qty:
+                    <div>
+
+                        <Link to="/product">
+                            {title}
+                        </Link>
+                        <p>in stock</p>
+                        <div className="checkout-item_qty">
+                            Qty:
                         <button onClick={() => props.subtractQtyHandler(id)} className="checkout_subtract">-</button>
-                        <div>{qty}</div>
-                        <button onClick={() => props.addQtyHandler(id)} className="checkout_addt">+</button>
+                            <div>{qty}</div>
+                            <button onClick={() => props.addQtyHandler(id)} className="checkout_addt">+</button>
+                        </div>
                     </div>
-                    <button onClick={() => props.deleteItemHandler(id)}>Remove from Cart</button>
+                    <button onClick={() => props.deleteItemHandler(id)} className="checkout-item_delete">Remove from Cart</button>
                 </div>
                 <div className="checkout-item_price">
-                    <b>Rs {price * qty}</b>
+                    <b>₹ {price * qty}</b>
                 </div>
             </div>
             <hr></hr>

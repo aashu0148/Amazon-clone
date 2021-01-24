@@ -13,7 +13,7 @@ function Product({ id, title, rating, price, image, ...props }) {
         <div className="product" id={id}>
             <img src={image} alt="can't load :(" />
             <div className="product_price">
-                <small>Rs</small>
+                <span>₹ </span>
                 <strong>{price}</strong>
             </div>
             <p className="product_title">{title}</p>
