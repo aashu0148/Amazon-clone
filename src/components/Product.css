@@ -24,10 +24,21 @@
   margin: auto;
 }
 .product button {
-  background: #f0c14b;
-  border-color: #a88734 #9c7e31 #f0c14b;
+  /* background: #f0c14b; */
+  background:linear-gradient(180deg, #f3d286 0%,#f0c14d 100% );
+  border-color: #a88734 #9c7e31 #846a29;
   outline: none;
-  width: fit-content;
-  margin: 10px auto;
+  margin: 10px 0;
   padding: 5px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+.product button:hover{
+  background:linear-gradient(180deg, #f0c14be0 0%,#f0c14b 100% );
 }

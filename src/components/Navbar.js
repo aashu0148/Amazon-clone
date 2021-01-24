@@ -1,8 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-function Navbar() {
+import { connect } from 'react-redux'
+function Navbar(props) {
     return (
+
         <div className="navbar_navTop">
 
         <div className="navbar_navbar">
@@ -60,8 +62,9 @@ function Navbar() {
             <div className="navbar_options navbar_Cart">
                 <span className="navbar_firstLine navbar_cart-item">0</span>
                 <span className="navbar_secondLine navbar_cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
+
             </div>
-</div>
+
 
        <div className="navbar_navBottom navbar">
            <div className="navbar_left">
@@ -114,13 +117,14 @@ function Navbar() {
     )
 }
 
+const mapToProps = state => {
+    return {
+        baskterCounter: state.basketCount
+    }
+}
 
+export default connect(mapToProps)(Navbar)
 
-// let scrollNav = () => {
-//     if(window.scrollY > navbar)
-// }
-
-export default Navbar;
 
 
 

@@ -1,12 +1,16 @@
+
 .navbar_navTop{
+
   display: flex;
   flex-direction: column;
   width: 100%;
+
   font-family: 'Ubuntu', sans-serif;
   z-index: 100;
 }
 .navbar_navbar {
   background: #0F1111;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +27,9 @@
   width: 100px;
   cursor: pointer;
 }
+
 .navbar_logo{
+
   position: relative;
   color: white;
   display: flex;
@@ -33,7 +39,9 @@
   left: -5px;
   margin: 15px 20px;
 }
+
 .navbar_logo span{
+
   position: absolute;
   color: white;
   text-decoration: none;
@@ -66,24 +74,30 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .navbar_firstLine{
+
   color: #cac7c7;
 }
-.hello{
+.hello {
   padding-left: 12px;
 }
+
 .navbar_secondLine{
+
   color: white;
   font-weight: bolder;
- text-decoration: none;
- float: left;
+  text-decoration: none;
+  float: left;
 }
 .navbar_link {
   color: rgb(248, 245, 245);
   padding: 0 10px;
   text-decoration: none;
 }
+
 .navbar_dropdown{
+
   height: 36.5px;
   width: 3rem;
   border-top-left-radius: 3px;
@@ -93,6 +107,7 @@
   outline-style: none;
   text-underline-offset: none;
 }
+
 .navbar_lang{
   color: white;
 }
@@ -100,10 +115,12 @@
   align-items: center;
 }
 .navbar_cart-item{
+
   font-size: 1.2rem;
   font-weight: bolder;
   color: orange;
 }
+
 .navbar_cart{
   font-size: 1.8rem;
 }
@@ -119,6 +136,7 @@
   margin: 0.8rem;
   color: white;
 }
+
 .navbar_burger{
   margin-right: 0.4rem;
 }

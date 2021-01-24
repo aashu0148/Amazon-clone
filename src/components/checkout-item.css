@@ -1,0 +1,29 @@
+.checkout-item {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  column-gap: 10px;
+  margin: 10px 0;
+  background: #fff;
+  padding: 10px;
+}
+
+.checkout-item_desc {
+  min-width: 250px;
+}
+.checkout-item_desc a {
+  color: rgb(28, 94, 236);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.checkout-item_desc a:hover {
+  text-decoration: underline;
+}
+.checkout-item_desc p {
+  color: green;
+  font-size: 0.8rem;
+}
+.checkout-item_image img {
+  max-width: 150px;
+  object-fit: contain;
+}

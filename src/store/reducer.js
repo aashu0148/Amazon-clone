@@ -1,7 +1,8 @@
 import * as actionTypes from './action'
 
 let initialState = {
-    basketItems: 0,
+    basketCount: 0,
+    basket: []
 }
 
 const reducer = (state = initialState, action) => {
@@ -9,7 +10,12 @@ const reducer = (state = initialState, action) => {
         case actionTypes.ADD_TO_BASKET:
             return {
                 ...state,
-                basketItems: state.basketItems + 1
+                basketCount: state.basketCount + 1
+            }
+        case actionTypes.FILL_BASKET:
+            return {
+                ...state,
+                basket: state.basket.concat(action.basketItems)
             }
         default:
             return state
