@@ -20,6 +20,9 @@
   z-index: 100;
   font-size: 0.85rem;
 }
+.navbar_navbar a{
+  text-decoration: none;
+}
 .navbar_fixed {
   width: 100%;
   margin-bottom: 5rem;
@@ -44,6 +47,7 @@
 
 .navbar_logo span {
   position: absolute;
+  bottom: 1.2rem;
   color: white;
   text-decoration: none;
 }
@@ -140,13 +144,16 @@
   margin: 0.5rem;
   display: flex;
   justify-content: space-evenly;
-  text-decoration: none;
 }
-.navbar_item Link {
+.navbar_item a{
   text-decoration: none;
 }
 .navbar_item span {
   text-decoration: none;
   color: white;
   margin: 0.5rem;
+}
+.navbar_ads{
+  position: absolute;
+  right: 2rem;
 }

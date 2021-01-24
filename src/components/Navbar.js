@@ -15,10 +15,6 @@ function Navbar(props) {
                         </Link>
                     </div>
 
-                    <div className="navbar_options">
-                        <span className="navbar_firstLine hello">Hello</span>
-                        <span className="navbar_secondLine"><i className="fa fa-map-marker" aria-hidden="true"></i> Select your address</span>
-                    </div>
 
                     <div className="navbar_search-bar">
                         <select className="navbar_search-bar  navbar_dropdown">
@@ -48,16 +44,14 @@ function Navbar(props) {
                     <div className="navbar_options">
                         <span className="navbar_lang">ENG <i className="fa fa-caret-down" aria-hidden="true"></i></span>
                     </div>
-
+                    
+                    <Link to="/Login">
                     <div className="navbar_options">
                         <span className="navbar_firstLine">Hello, Sign in</span>
                         <span className="navbar_secondLine"> Account <i className="fa fa-caret-down" aria-hidden="true"></i></span>
                     </div>
+                    </Link>
 
-                    <div className="navbar_options">
-                        <span className="navbar_firstLine">Returns</span>
-                        <span className="navbar_secondLine"> &Orders</span>
-                    </div>
 
                     <Link to="/checkout">
                         <div className="navbar_options navbar_Cart">
@@ -78,39 +72,32 @@ function Navbar(props) {
 
                 <div className="navbar_middle">
 
-                    <div className="navbar_item">
-                        <Link to="/">
-                            <span>Best Seller</span>
-                        </Link>
-                    </div>
-                    <div className="navbar_item">
-                        <Link to="/">
-                            <span>Best Seller</span>
-                        </Link>
-                    </div>
-                    <div className="navbar_item">
-                        <Link to="/">
-                            <span>Best Seller</span>
-                        </Link>
-                    </div>
-                    <div className="navbar_item">
-                        <Link to="/">
-                            <span>Best Seller <i className="fas fa-caret-down"></i></span>
-                        </Link>
-                    </div>
-                    <div className="navbar_item">
-                        <Link to="/">
-                            <span>Best Seller</span>
-                        </Link>
-                    </div>
-                    <div className="navbar_item">
+                <div className="navbar_item">
                         <Link to="/">
                             <span>Best Seller</span>
                         </Link>
                     </div>
 
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Today's Deals</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Fashion</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Mobiles</span>
+                        </Link>
+                    </div>
 
+                </div>
 
+                <div className="navbar_ads">
+                    <img src="https://www.amazon.in/gp/redirect.html/?ie=UTF8&location=https%3A%2F%2Fwww.primevideo.com%2Fdetail%2Famzn1.dv.gti.eab9f6f3-29da-6529-a314-9a6c4e1224e9%2Fref_&source=standards&token=BD186D118FFDAD25016A185DCEE0501503B30AEC&ref_=nav_swm_dvm_crs_swm_in_ai_s_dk_gw0_L_np_coolie&pf_rd_p=e5a899dc-98f2-4dcf-a682-642918cd1457&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=6XTKA8WX678M2WT23NGF" alt="not found"></img>
                 </div>
 
             </div>
