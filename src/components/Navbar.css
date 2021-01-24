@@ -1,21 +1,31 @@
-.navbar_navTop{
+.navbar_navTop {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: 'Ubuntu', sans-serif;
+
+  font-family: "Ubuntu", sans-serif;
   z-index: 100;
 }
+
+.navbar_navbar-container {
+  width: 100%;
+}
+
 .navbar_navbar {
-  background: #0F1111;
+  background: #0f1111;
+  transition: 0.4s;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
   font-size: 0.85rem;
 }
-.navbar_fixed{
+.navbar_navbar a{
+  text-decoration: none;
+}
+.navbar_fixed {
   width: 100%;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
   position: fixed;
   top: 0;
 }
@@ -23,7 +33,8 @@
   width: 100px;
   cursor: pointer;
 }
-.navbar_logo{
+
+.navbar_logo {
   position: relative;
   color: white;
   display: flex;
@@ -33,8 +44,10 @@
   left: -5px;
   margin: 15px 20px;
 }
-.navbar_logo span{
+
+.navbar_logo span {
   position: absolute;
+  bottom: 1.2rem;
   color: white;
   text-decoration: none;
 }
@@ -66,26 +79,27 @@
   text-decoration: none;
   cursor: pointer;
 }
-.navbar_o
-.navbar_firstLine{
-  text-decoration: none;
+
+.navbar_firstLine {
   color: #cac7c7;
 }
-.hello{
+.hello {
   padding-left: 12px;
 }
-.navbar_secondLine{
+
+.navbar_secondLine {
   color: white;
   font-weight: bolder;
- text-decoration: none;
- float: left;
+  text-decoration: none;
+  float: left;
 }
 .navbar_link {
   color: rgb(248, 245, 245);
   padding: 0 10px;
   text-decoration: none;
 }
-.navbar_dropdown{
+
+.navbar_dropdown {
   height: 36.5px;
   width: 3rem;
   border-top-left-radius: 3px;
@@ -95,48 +109,51 @@
   outline-style: none;
   text-underline-offset: none;
 }
-.navbar_lang{
+
+.navbar_lang {
   color: white;
 }
-.navbar_Cart{
+.navbar_Cart {
   align-items: center;
 }
-.navbar_cart-item{
+.navbar_cart-item {
   font-size: 1.2rem;
   font-weight: bolder;
   color: orange;
 }
-.navbar_cart{
+
+.navbar_cart {
   font-size: 1.8rem;
 }
-.navbar_navBottom{
-    display: flex;
-    width: 100%;
-    background: #252929;
-    align-items: center;
-
+.navbar_navBottom {
+  display: flex;
+  width: 100%;
+  background: #252929;
+  align-items: center;
 }
-.navbar_left{
+.navbar_left {
   display: flex;
   margin: 0.8rem;
   color: white;
 }
-.navbar_burger{
+
+.navbar_burger {
   margin-right: 0.4rem;
 }
-.navbar_middle{
+.navbar_middle {
   margin: 0.5rem;
   display: flex;
   justify-content: space-evenly;
-  text-decoration: none;
-  
 }
-.navbar_item Link{
+.navbar_item a{
   text-decoration: none;
 }
-.navbar_item span{
+.navbar_item span {
   text-decoration: none;
   color: white;
   margin: 0.5rem;
 }
-
+.navbar_ads{
+  position: absolute;
+  right: 2rem;
+}
