@@ -3,9 +3,9 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 function Navbar() {
     return (
-        <div className="navbar_nav">
+        <div className="navbar_navTop">
 
-        <div className=" navbar_navbar">
+        <div className="navbar_navbar">
             <div className="navbar_logo">
             <Link to="/">
                 <img src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="not found"></img>
@@ -63,7 +63,7 @@ function Navbar() {
             </div>
 </div>
 
-       <div className="navbar_navBottom">
+       <div className="navbar_navBottom navbar">
            <div className="navbar_left">
                <div className="navbar_burger">
                <i className="fas fa-bars"></i>
@@ -90,7 +90,7 @@ function Navbar() {
                        </div>
                        <div className="navbar_item">
                        <Link to="/">
-                         <span>Best Seller</span>
+                         <span>Best Seller <i className="fas fa-caret-down"></i></span>
                    </Link>
                        </div>
                        <div className="navbar_item">
@@ -113,6 +113,12 @@ function Navbar() {
      </div>
     )
 }
+
+
+
+// let scrollNav = () => {
+//     if(window.scrollY > navbar)
+// }
 
 export default Navbar;
 

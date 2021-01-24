@@ -1,24 +1,23 @@
-.navbar_nav{
-  /* position: sticky;
-  top: 0; */
+.navbar_navTop{
   display: flex;
   flex-direction: column;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  position: fixed;
   z-index: 100;
 }
 .navbar_navbar {
-  position: sticky;
-  top: 0;
-  /* bottom: 0; */
-  /* overflow: hidden; */
   background: #0F1111;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
   font-size: 0.85rem;
+}
+.navbar_fixed{
+  width: 100%;
+  margin-bottom:5rem;
+  position: fixed;
+  top: 0;
 }
 .navbar_logo img {
   width: 100px;
