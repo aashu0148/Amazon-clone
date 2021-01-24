@@ -60,67 +60,66 @@ function Navbar(props) {
                 </div>
 
                 <div className="navbar_options navbar_Cart">
-                    <span className="navbar_firstLine navbar_cart-item">0</span>
+                    <span className="navbar_firstLine navbar_cart-item">{props.basketCount}</span>
                     <span className="navbar_secondLine navbar_cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
 
                 </div>
+            </div>
 
+            <div className="navbar_navBottom navbar">
+                <div className="navbar_left">
+                    <div className="navbar_burger">
+                        <i className="fas fa-bars"></i>
+                    </div>
+                    <span>All</span>
+                </div>
 
-                <div className="navbar_navBottom navbar">
-                    <div className="navbar_left">
-                        <div className="navbar_burger">
-                            <i className="fas fa-bars"></i>
-                        </div>
-                        <span>All</span>
+                <div className="navbar_middle">
+
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller <i className="fas fa-caret-down"></i></span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller</span>
+                        </Link>
+                    </div>
+                    <div className="navbar_item">
+                        <Link to="/">
+                            <span>Best Seller</span>
+                        </Link>
                     </div>
 
-                    <div className="navbar_middle">
 
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller</span>
-                            </Link>
-                        </div>
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller</span>
-                            </Link>
-                        </div>
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller</span>
-                            </Link>
-                        </div>
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller <i className="fas fa-caret-down"></i></span>
-                            </Link>
-                        </div>
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller</span>
-                            </Link>
-                        </div>
-                        <div className="navbar_item">
-                            <Link to="/">
-                                <span>Best Seller</span>
-                            </Link>
-                        </div>
-
-
-
-                    </div>
 
                 </div>
 
             </div>
+
         </div>
     )
 }
 
 const mapToProps = state => {
     return {
-        baskterCounter: state.basketCount
+        basketCount: state.basketCount
     }
 }
 
