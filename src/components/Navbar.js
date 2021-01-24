@@ -59,11 +59,12 @@ function Navbar(props) {
                     <span className="navbar_secondLine"> &Orders</span>
                 </div>
 
-                <div className="navbar_options navbar_Cart">
-                    <span className="navbar_firstLine navbar_cart-item">{props.basketCount}</span>
-                    <span className="navbar_secondLine navbar_cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
-
-                </div>
+                <Link to="/checkout">
+                    <div className="navbar_options navbar_Cart">
+                        <span className="navbar_firstLine navbar_cart-item">{props.basketCount}</span>
+                        <span className="navbar_secondLine navbar_cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    </div>
+                </Link>
             </div>
 
             <div className="navbar_navBottom navbar">
