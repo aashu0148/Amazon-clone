@@ -1,26 +1,35 @@
-.nav {
+
+.navbar_navTop{
+
   display: flex;
   flex-direction: column;
-  position: sticky;
   width: 100%;
-  font-family: "Ubuntu", sans-serif;
-  position: relative;
+
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 100;
 }
-.nav_navbar {
-  position: sticky;
-  top: 0;
-  background: #0f1111;
+.navbar_navbar {
+  background: #0F1111;
+
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
   font-size: 0.85rem;
 }
-.logo img {
+.navbar_fixed{
+  width: 100%;
+  margin-bottom:5rem;
+  position: fixed;
+  top: 0;
+}
+.navbar_logo img {
   width: 100px;
   cursor: pointer;
 }
-.logo {
+
+.navbar_logo{
+
   position: relative;
   color: white;
   display: flex;
@@ -30,24 +39,26 @@
   left: -5px;
   margin: 15px 20px;
 }
-.logo span {
+
+.navbar_logo span{
+
   position: absolute;
   color: white;
   text-decoration: none;
 }
-.nav_navbar_search-bar {
+.navbar_search-bar {
   display: flex;
   flex: 1;
   align-items: center;
 }
-.nav_navbar_search-bar input {
+.navbar_search-bar input {
   height: 100%;
   width: 100%;
   border: none;
   outline: none;
   padding: 10px;
 }
-.nav_navbar_search-bar i {
+.navbar_search-bar i {
   background: rgb(253, 197, 92);
   padding: 10px;
   height: 36.5px;
@@ -55,7 +66,7 @@
   border-bottom-right-radius: 3px;
   outline: rgb(253, 197, 92);
 }
-.nav_navbar_options {
+.navbar_options {
   padding: 0 10px;
   display: flex;
   flex-direction: column;
@@ -63,13 +74,17 @@
   text-decoration: none;
   cursor: pointer;
 }
-.nav_navbar_options_firstLine {
+
+.navbar_firstLine{
+
   color: #cac7c7;
 }
 .hello {
   padding-left: 12px;
 }
-.nav_navbar_options_secondLine {
+
+.navbar_secondLine{
+
   color: white;
   font-weight: bolder;
   text-decoration: none;
@@ -80,9 +95,11 @@
   padding: 0 10px;
   text-decoration: none;
 }
-.dropdown {
+
+.navbar_dropdown{
+
   height: 36.5px;
-  width: fit-content;
+  width: 3rem;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   background: rgb(241, 239, 239);
@@ -90,31 +107,52 @@
   outline-style: none;
   text-underline-offset: none;
 }
-.nav_navbar_options_lang {
+
+.navbar_lang{
   color: white;
 }
-.Cart {
+.navbar_Cart{
   align-items: center;
 }
-.cart-item {
+.navbar_cart-item{
+
   font-size: 1.2rem;
   font-weight: bolder;
   color: orange;
 }
-.cart {
+
+.navbar_cart{
   font-size: 1.8rem;
 }
-.nav_navBottom {
-  display: flex;
-  width: 100%;
-  background: #252929;
-  align-items: center;
+.navbar_navBottom{
+    display: flex;
+    width: 100%;
+    background: #252929;
+    align-items: center;
+
 }
-.nav_navBottom_left {
+.navbar_left{
   display: flex;
   margin: 0.8rem;
   color: white;
 }
-.nav_navBottom_left_burger {
+
+.navbar_burger{
   margin-right: 0.4rem;
 }
+.navbar_middle{
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  
+}
+.navbar_item Link{
+  text-decoration: none;
+}
+.navbar_item span{
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem;
+}
+
