@@ -19,9 +19,8 @@ function Product({ id, title, rating, price, image, ...props }) {
             <p className="product_title">{title}</p>
             <div className="product_stars">{stars}</div>
             <button onClick={() => {
-                props.addToBasketHandler()
+                props.addToBasketHandler(id)
                 const data = {
-
                     id,
                     title,
                     image,
@@ -40,8 +39,8 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        addToBasketHandler: () => dispatch({ type: actionTypes.ADD_TO_BASKET }),
-        fillBasketHandler: (data) => dispatch({ type: actionTypes.FILL_BASKET, basketItems: data })
+        addToBasketHandler: (id) => dispatch({ type: actionTypes.ADD_TO_BASKET, id: id }),
+        fillBasketHandler: (data) => dispatch({ type: actionTypes.FILL_BASKET, data: data, id: data.id })
     }
 }
 
