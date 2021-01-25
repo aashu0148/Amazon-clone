@@ -2,7 +2,8 @@ import * as actionTypes from './action'
 
 let initialState = {
     basketCount: 0,
-    basket: {}
+    basket: {},
+    authUser: null
 }
 // structure of basket will be like 
 // basket :{
@@ -78,6 +79,16 @@ const reducer = (state = initialState, action) => {
                     basketCount: state.basketCount - qty,
                     basket: myBasket
                 }
+            }
+        case actionTypes.SIGN_IN:
+            return {
+                ...state,
+                authUser: action.user
+            }
+        case actionTypes.SIGN_OUT:
+            return {
+                ...state,
+                authUser: null
             }
 
         default:

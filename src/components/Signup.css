@@ -1,0 +1,54 @@
+.signup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.signup_logo {
+  margin: 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.signup_logo img {
+  width: 110px;
+}
+.signup_logo span {
+  position: absolute;
+  top: 0.1rem;
+  color: black;
+}
+.signup_create-account {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 23rem;
+  border: 0.1px solid rgb(182, 180, 180);
+  border-radius: 5px;
+}
+.signup_create-account span {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+.signup_create-account input {
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  height: 1.8rem;
+  border: 1px solid rgb(139, 138, 138);
+  border-radius: 3px;
+}
+.signup_create-account button {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  height: 1.8rem;
+  background: rgb(253, 197, 92);
+  border: 1px solid rgb(158, 149, 149);
+  border-radius: 3px;
+}
