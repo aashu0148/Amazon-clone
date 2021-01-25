@@ -1,5 +1,6 @@
 import React from 'react'
 import './Product.css'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import * as actionTypes from '../store/action'
 function Product({ id, title, rating, price, image, ...props }) {
@@ -11,7 +12,10 @@ function Product({ id, title, rating, price, image, ...props }) {
     }
     return (
         <div className="product" id={id}>
-            <img src={image} alt="can't load :(" />
+            <Link style={{ marginTop: "auto", textAlign: "center" }} to="/product">
+                <img src={image} alt="can't load :(" />
+            </Link>
+
             <div className="product_price">
                 <span>₹ </span>
                 <strong>{price}</strong>

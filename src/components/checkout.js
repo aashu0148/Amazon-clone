@@ -4,11 +4,19 @@ import CheckoutItem from './checkout-item'
 import './checkout.css'
 
 function checkout(props) {
-    const items = []
+    let items = []
     let i = 0;
+    let totalPrice = 0;
+    let totalItems = 0;
     for (const item in props.basket) {
         const e = props.basket[item];
+        totalItems += e.qty
+        totalPrice += e.price * e.qty
         items.push(<CheckoutItem key={i++} id={e.id} price={e.price} title={e.title} image={e.image} qty={e.qty} />)
+    }
+
+    if (items.length === 0) {
+        items.push(<h1 key="404">Your Cart is Empty :/</h1>)
     }
 
     return (
@@ -21,11 +29,10 @@ function checkout(props) {
                 <br></br>
             </div>
             <div className="checkout_proceed">
-                <h3>Subtotal (10 items):</h3>
-                <h3><b>Rs 89000</b></h3>
+                <div className="checkout_sub-heading">Subtotal ({totalItems} items):</div>
+                <div className="checkout_total-price"><b>₹ {totalPrice}</b></div>
                 <button>Proceed to Buy</button>
             </div>
-
         </div >
     )
 }

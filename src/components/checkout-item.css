@@ -19,7 +19,10 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
-  max-height: 90px;
+}
+.checkout-item_title {
+  max-height: 85px;
+  overflow: hidden;
 }
 .checkout-item_desc a:hover {
   text-decoration: underline;
