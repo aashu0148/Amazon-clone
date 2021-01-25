@@ -1,3 +1,4 @@
+
 .signup{
     position: relative;
     display: flex;
@@ -54,6 +55,7 @@
     height: 1.8rem;
     border: 1px solid rgb(139, 138, 138);
     border-radius: 3px;
+  padding:0.2rem 5px;
 }
 .signup_create-account button{
     margin-top: 0.2rem;
@@ -62,6 +64,7 @@
     background: rgb(253, 197, 92);
     border: 1px solid rgb(158, 149, 149);
     border-radius: 3px;
+  cursor:pointer;
 }
 .signup_footer{
     margin-top: 1rem;
@@ -79,3 +82,4 @@
       text-decoration: none;
       margin: 0.5rem;
   }
+

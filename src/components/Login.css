@@ -51,6 +51,8 @@
     height: 1.8rem;
     border: 1px solid rgb(139, 138, 138);
     border-radius: 3px;
+   outline: none;
+  padding: 0 10px;
 }
 .login_login button{
     margin-top: 0.2rem;
@@ -59,6 +61,7 @@
     background: rgb(253, 197, 92);
     border: 1px solid rgb(158, 149, 149);
     border-radius: 3px;
+  cursor:pointer;
 }
 .login_login p{
     margin-top: 1rem;
@@ -88,17 +91,18 @@
     border-radius: 3px;
 }
 .login_footer{
+
   margin-top: 1rem;
   width: 100%;
   text-align: center;
   border-top: 2px solid rgb(218, 214, 214);
   font-size: 0.8rem;
 }
-.login_footer-links{
-    display: flex;
-    justify-content: center;
-    margin: 0.4rem;
+.login_footer-links {
+  display: flex;
+  justify-content: center;
+  margin: 0.4rem;
 }
-.login_footer-links a{
-    margin: 0.5rem;
+.login_footer-links a {
+  margin: 0.5rem;
 }
