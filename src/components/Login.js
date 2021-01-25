@@ -19,12 +19,12 @@ function Login() {
                <span>Email or mobile phone number</span>
                 <input type="text" name="enter_email" />
                 <button type="button">Continue</button>
-                <p>By continuing, you agree to Amozon's <Link>Conditions of Use </Link> and <Link>Privacy Notice</Link>.</p>
+                <p>By continuing, you agree to Amozon's <Link to="">Conditions of Use </Link> and <Link to="">Privacy Notice</Link>.</p>
                 <Link to="/"><p><i className="fas fa-caret-right"></i> Need Help?</p></Link>
             </div>
 
             <div className="login_break">
-                <p><span login_break_text>New to Amazon?</span></p>
+                <p>New to Amazon?</p>
             </div>
 
             <Link to="/Signup">
@@ -36,13 +36,13 @@ function Login() {
 
             <div className="login_footer">
                 <div className="login_footer-links">
-                    <Link>
+                    <Link to="">
                     <p>Condition of Use</p>
                     </Link>
-                    <Link>
+                    <Link to="">
                     <p>Privacy Notice</p>
                     </Link>
-                    <Link>
+                    <Link to="">
                     <p>Help</p>
                     </Link>
                 </div>

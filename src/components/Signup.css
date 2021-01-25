@@ -8,6 +8,13 @@
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.signup p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.signup a{
+    text-decoration: none;
+}
 .signup_logo{
     margin: 1rem;
     display: flex;
@@ -36,6 +43,10 @@
     font-size: 0.9rem;
     font-weight: bolder;
 }
+.signup_create-account p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .signup_create-account input{
     padding: 0.2rem;
     margin-top: 0.2rem;
@@ -52,3 +63,19 @@
     border: 1px solid rgb(158, 149, 149);
     border-radius: 3px;
 }
+.signup_footer{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid rgb(218, 214, 214);
+    font-size: 0.8rem;
+  }
+  .signup_footer-links{
+      display: flex;
+      justify-content: center;
+      margin: 0.4rem;
+  }
+  .signup_footer-links a{
+      text-decoration: none;
+      margin: 0.5rem;
+  }

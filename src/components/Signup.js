@@ -21,9 +21,10 @@ function Signup() {
                 <input type="email" />
                 <span>Password</span>
                 <input type="text" placeholder="At least 6 character" />
-                <p>We will send you a text to verify your email.</p>
                 <button type="button">Continue</button>
             </div>
+
+            <p>Already have an account? <Link to="/Login">Sign In <i className="fas fa-caret-right"></i></Link></p>
 
 
             <div className="signup_footer">
