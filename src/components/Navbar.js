@@ -47,7 +47,7 @@ function Navbar(props) {
 
                     <Link to="/Login">
                         <div className="navbar_options">
-                            <span className="navbar_firstLine">Hello, Sign in</span>
+                            <span className="navbar_firstLine">Hello, {props.userName}</span>
                             <span className="navbar_secondLine"> Account <i className="fa fa-caret-down" aria-hidden="true"></i></span>
                         </div>
                     </Link>
@@ -106,13 +106,14 @@ function Navbar(props) {
     )
 }
 
-const mapToProps = state => {
+const mapStateToProps = state => {
     return {
-        basketCount: state.basketCount
+        basketCount: state.basketCount,
+        userName: state.authUserName
     }
 }
 
-export default connect(mapToProps)(Navbar)
+export default connect(mapStateToProps)(Navbar)
 
 
 

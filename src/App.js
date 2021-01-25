@@ -14,7 +14,7 @@ class App extends Component {
   componentDidMount() {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        this.props.loggedIn(user)
+        this.props.loggedIn(user.email, user.displayName)
       } else {
         this.props.loggedOut()
       }
@@ -38,21 +38,21 @@ class App extends Component {
           </Switch>
         </div>
       </Router >
-    );
+    )
   }
 }
 
 const mapStateToProps = state => {
   return {
-
+    email: state.authUser,
+    name: state.authUserName
   }
 }
 const mapDispatchToProps = dispatch => {
   return {
-    loggedIn: (user) => dispatch({ type: actionTypes.SIGN_IN, user: user }),
+    loggedIn: (email, name) => dispatch({ type: actionTypes.SIGN_IN, userEmail: email, userName: name }),
     loggedOut: () => dispatch({ type: actionTypes.SIGN_OUT })
   }
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

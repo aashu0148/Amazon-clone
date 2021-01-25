@@ -11,6 +11,7 @@ function Login(props) {
 
         auth.signInWithEmailAndPassword(email, password)
             .then((e) => {
+                console.log(e)
                 props.history.push("/")
             })
             .catch(e => {
@@ -46,22 +47,22 @@ function Login(props) {
             </div>
 
             <Link to="/signup">
-            <button className="login_create-account">
-                Create your Amazon account
+                <button className="login_create-account">
+                    Create your Amazon account
             </button>
             </Link>
-           
+
 
             <div className="login_footer">
                 <div className="login_footer-links">
                     <Link to="/">
-                    <p>Condition of Use</p>
+                        <p>Condition of Use</p>
                     </Link>
                     <Link to="/">
-                    <p>Privacy Notice</p>
+                        <p>Privacy Notice</p>
                     </Link>
                     <Link to="/">
-                    <p>Help</p>
+                        <p>Help</p>
 
                     </Link>
                 </div>

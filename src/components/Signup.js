@@ -11,10 +11,15 @@ function Signup(props) {
         let email = document.querySelector(".signup_email").value
         let password = document.querySelector(".signup_password").value
 
-        auth.signInWithEmailAndPassword(email, password)
-            .then((e) => {
-                props.addUserName(name)
-                props.history.push("/")
+        auth.createUserWithEmailAndPassword(email, password)
+            .then((user) => {
+                console.log("user >>>>>", user)
+                auth.currentUser.updateProfile({
+                    displayName: name
+                }).then(e => {
+                    props.addUserName(name)
+                    props.history.push("/")
+                }).catch(err => alert(err))
             })
             .catch(e => {
                 alert(e.message)
@@ -42,23 +47,23 @@ function Signup(props) {
                 <input type="password" placeholder="At least 6 character" className="signup_password" />
                 <button type="button" onClick={signUp}>Sign up</button>
             </div>
-<p>Already have an account? <Link to="/Login">Sign In <i className="fas fa-caret-right"></i></Link></p>
+            <p>Already have an account? <Link to="/Login">Sign In <i className="fas fa-caret-right"></i></Link></p>
 
 
             <div className="signup_footer">
                 <div className="signup_footer-links">
                     <Link to="">
 
-                    <p>Condition of Use</p>
+                        <p>Condition of Use</p>
                     </Link>
                     <Link to="/">
-                    <p>Privacy Notice</p>
+                        <p>Privacy Notice</p>
                     </Link>
                     <Link to="/">
-                    <p>Help</p>
+                        <p>Help</p>
                     </Link>
                 </div>
-          
+
                 <div className="signup_footer-last">
                     <span>© 1996-2020, Amazon.com, Inc. or its affiliates</span>
                 </div>
