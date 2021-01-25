@@ -4,17 +4,22 @@ import Navbar from "./components/Navbar"
 import Home from './components/Home'
 import Checkout from './components/checkout'
 import Login from './components/Login'
+import Signup from './components/Signup'
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
           <Route path="/checkout">
             <Navbar />
             <Checkout />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <Signup />
           </Route>
           <Route path="/">
             <Navbar />

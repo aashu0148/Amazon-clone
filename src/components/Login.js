@@ -27,9 +27,12 @@ function Login() {
                 <p><span login_break_text>New to Amazon?</span></p>
             </div>
 
+            <Link to="/Signup">
             <button className="login_create-account">
                 Create your Amazon account
             </button>
+            </Link>
+           
 
             <div className="login_footer">
                 <div className="login_footer-links">
