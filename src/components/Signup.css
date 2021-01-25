@@ -43,6 +43,8 @@
   height: 1.8rem;
   border: 1px solid rgb(139, 138, 138);
   border-radius: 3px;
+  outline: none;
+  padding: 0.2rem 5px;
 }
 .signup_create-account button {
   margin-top: 0.2rem;

@@ -1,8 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './Signup.css'
+import { Link } from 'react-router-dom';
+import { auth } from '../firebase'
+import { connect } from 'react-redux'
+import * as actionTypes from '../store/action'
 
-function Signup() {
+function Signup(props) {
+    function signUp() {
+        let name = document.querySelector(".signup_name").value
+        let email = document.querySelector(".signup_email").value
+        let password = document.querySelector(".signup_password").value
+
+        auth.signInWithEmailAndPassword(email, password)
+            .then((e) => {
+                props.addUserName(name)
+                props.history.push("/")
+            })
+            .catch(e => {
+                alert(e.message)
+            })
+    }
+
     return (
         <div className="signup">
 
@@ -16,13 +34,12 @@ function Signup() {
             <div className="signup_create-account">
                 <h2>Create Account</h2>
                 <span>Your Name</span>
-                <input type="text" />
+                <input type="text" className="signup_name" />
                 <span>Email</span>
-                <input type="email" />
+                <input type="email" className="signup_email" />
                 <span>Password</span>
-                <input type="text" placeholder="At least 6 character" />
-                <p>We will send you a text to verify your email.</p>
-                <button type="button">Continue</button>
+                <input type="password" placeholder="At least 6 character" className="signup_password" />
+                <button type="button" onClick={signUp}>Sign up</button>
             </div>
 
 
@@ -44,11 +61,18 @@ function Signup() {
                 </div>
 
             </div>
-
-
-
         </div>
     )
 }
 
-export default Signup;
+const mapStateToProps = state => {
+    return {
+
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        addUserName: (name) => dispatch({ type: actionTypes.USER_NAME, userName: name })
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Signup)
