@@ -52,6 +52,7 @@ const mapDispatchToProps = dispatch => {
     loggedIn: (user) => dispatch({ type: actionTypes.SIGN_IN, user: user }),
     loggedOut: () => dispatch({ type: actionTypes.SIGN_OUT })
   }
+
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

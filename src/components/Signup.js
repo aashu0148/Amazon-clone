@@ -34,6 +34,7 @@ function Signup(props) {
             <div className="signup_create-account">
                 <h2>Create Account</h2>
                 <span>Your Name</span>
+
                 <input type="text" className="signup_name" />
                 <span>Email</span>
                 <input type="email" className="signup_email" />
@@ -41,21 +42,23 @@ function Signup(props) {
                 <input type="password" placeholder="At least 6 character" className="signup_password" />
                 <button type="button" onClick={signUp}>Sign up</button>
             </div>
+<p>Already have an account? <Link to="/Login">Sign In <i className="fas fa-caret-right"></i></Link></p>
 
 
             <div className="signup_footer">
                 <div className="signup_footer-links">
                     <Link to="">
-                        <p>Condition of Use</p>
+
+                    <p>Condition of Use</p>
                     </Link>
-                    <Link to="">
-                        <p>Privacy Notice</p>
+                    <Link to="/">
+                    <p>Privacy Notice</p>
                     </Link>
-                    <Link to="">
-                        <p>Help</p>
+                    <Link to="/">
+                    <p>Help</p>
                     </Link>
                 </div>
-
+          
                 <div className="signup_footer-last">
                     <span>© 1996-2020, Amazon.com, Inc. or its affiliates</span>
                 </div>
@@ -76,3 +79,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Signup)
+

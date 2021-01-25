@@ -29,34 +29,40 @@ function Login(props) {
 
             <div className="login_login">
                 <h2>Login</h2>
+
                 <span>Email</span>
                 <input type="email" name="enter_email" className="login_email" placeholder="abc@xyz.com" />
                 <span>Password</span>
                 <input type="password" name="enter_email" className="login_password" placeholder="abc@12345" />
                 <button type="button" onClick={signIn}>Sign in</button>
                 <p>By continuing, you agree to Amozon's <Link to="/">Conditions of Use </Link> and <Link to="/">Privacy Notice</Link>.</p>
+
                 <Link to="/"><p><i className="fas fa-caret-right"></i> Need Help?</p></Link>
             </div>
 
             <div className="login_break">
-                <p><span >New to Amazon?</span></p>
+
+                <p>New to Amazon?</p>
             </div>
+
             <Link to="/signup">
-                <button className="login_create-account">
-                    Create your Amazon account
+            <button className="login_create-account">
+                Create your Amazon account
             </button>
             </Link>
+           
 
             <div className="login_footer">
                 <div className="login_footer-links">
                     <Link to="/">
-                        <p>Condition of Use</p>
+                    <p>Condition of Use</p>
                     </Link>
                     <Link to="/">
-                        <p>Privacy Notice</p>
+                    <p>Privacy Notice</p>
                     </Link>
                     <Link to="/">
-                        <p>Help</p>
+                    <p>Help</p>
+
                     </Link>
                 </div>
 
