@@ -1,6 +1,7 @@
 .carousel_banner {
   max-width: 1500px;
   margin-bottom: -150px;
+  overflow: hidden;
 }
 .carousel_banner img {
   mask-image: linear-gradient(
@@ -12,9 +13,13 @@
 }
 
 .carousel_prev {
+  /* margin-top: auto;
+  height: 60%; */
   transform: translate(-30px, -100px);
 }
 .carousel_next {
+  /* margin-top: auto;
+  height: 60%; */
   transform: translate(30px, -100px);
 }
 
