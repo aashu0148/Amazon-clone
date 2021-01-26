@@ -13,7 +13,6 @@ function Signup(props) {
 
         auth.createUserWithEmailAndPassword(email, password)
             .then((user) => {
-                console.log("user >>>>>", user)
                 auth.currentUser.updateProfile({
                     displayName: name
                 }).then(e => {
@@ -67,7 +66,6 @@ function Signup(props) {
                 <div className="signup_footer-last">
                     <span>© 1996-2020, Amazon.com, Inc. or its affiliates</span>
                 </div>
-
             </div>
         </div>
     )

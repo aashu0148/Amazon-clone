@@ -2,7 +2,31 @@ import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import * as actionTypes from '../store/action'
+import { auth } from '../firebase'
 function Navbar(props) {
+
+    let singhInOut = "";
+    if (props.authUser) {
+        singhInOut = (
+            <Link to="/" onClick={props.signOut}>
+                <div className="navbar_options">
+                    <span className="navbar_firstLine">Hello, {props.userName}</span>
+                    <span className="navbar_secondLine"> Sign Out ?</span>
+                </div>
+            </Link>
+        )
+    } else {
+        singhInOut = (
+            <Link to="/Login">
+                <div className="navbar_options">
+                    <span className="navbar_firstLine">Hello </span>
+                    <span className="navbar_secondLine"> Sign in</span>
+                </div>
+            </Link>
+        )
+    }
+
     return (
 
         <div className="navbar_navTop">
@@ -45,12 +69,7 @@ function Navbar(props) {
                         <span className="navbar_lang">ENG <i className="fa fa-caret-down" aria-hidden="true"></i></span>
                     </div>
 
-                    <Link to="/Login">
-                        <div className="navbar_options">
-                            <span className="navbar_firstLine">Hello, {props.userName}</span>
-                            <span className="navbar_secondLine"> Account <i className="fa fa-caret-down" aria-hidden="true"></i></span>
-                        </div>
-                    </Link>
+                    {singhInOut}
 
 
                     <Link to="/checkout">
@@ -109,11 +128,19 @@ function Navbar(props) {
 const mapStateToProps = state => {
     return {
         basketCount: state.basketCount,
-        userName: state.authUserName
+        userName: state.authUserName,
+        authUser: state.authUser
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        signOut: () => {
+            auth.signOut()
+        }
     }
 }
 
-export default connect(mapStateToProps)(Navbar)
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar)
 
 
 
