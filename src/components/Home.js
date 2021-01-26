@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import './Home.css'
+import Carousel from './Carousel'
 import Product from './Product'
 class Home extends Component {
     render() {
         return (
             <div className="home">
-                <img className="home_banner" src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_1500x600._CB431281464_.jpg" alt="img not found"></img>
+                <Carousel />
+
                 <div className="home_row">
                     <Product
                         id="329034"
