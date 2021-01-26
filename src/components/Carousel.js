@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Carousel.css'
 function carousel() {
     return (
-        <div id="carouselExampleControls" className="carousel slide home_banner" data-interval="2500" data-ride="carousel">
+        <div id="carouselExampleControls" className="carousel slide carousel_banner" data-interval="2500" data-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="d-block w-100" src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/RDay21/GW/Final/RD21_PCHERO_EN_1X._CB662559358_.jpg" alt="First slide" />
@@ -17,11 +17,11 @@ function carousel() {
                     <img className="d-block w-100" src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/May/gaming_1500x600._CB431281464_.jpg" alt="Fourth slide" />
                 </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style={{ transform: "translate(-30px,-100px)" }}>
+            <a className="carousel-control-prev carousel_prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <i className="fas fa-chevron-left fa-3x"></i>
                 <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style={{ transform: "translate(30px,-100px)" }}>
+            <a className="carousel-control-next carousel_next" href="#carouselExampleControls" role="button" data-slide="next" >
                 <i className="fas fa-chevron-right fa-3x"></i>
                 <span className="sr-only">Next</span>
             </a>

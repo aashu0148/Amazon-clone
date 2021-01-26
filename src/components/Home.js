@@ -7,7 +7,6 @@ class Home extends Component {
         return (
             <div className="home">
                 <Carousel />
-
                 <div className="home_row">
                     <Product
                         id="329034"
@@ -73,7 +72,6 @@ class Home extends Component {
                         rating={4}
                     />
                 </div>
-
             </div>
         )
     }
