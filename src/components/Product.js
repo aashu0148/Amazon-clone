@@ -10,12 +10,12 @@ function Product({ id, title, rating, price, image, ...props }) {
             (<span key={i}>⭐</span>)
         )
     }
+
     return (
         <div className="product" id={id}>
             <Link style={{ marginTop: "auto", textAlign: "center" }} to="/product">
                 <img src={image} alt="can't load :(" />
             </Link>
-
             <div className="product_price">
                 <span>₹ </span>
                 <strong>{price}</strong>

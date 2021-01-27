@@ -9,42 +9,42 @@ class Home extends Component {
                 <Carousel />
                 <div className="home_row">
                     <Product
-                        id="329034"
-                        title="One plus Never Settle"
-                        price={44000}
-                        image="https://images-eu.ssl-images-amazon.com/images/G/31/in-certifiedrefurbished/gateway/Ver2_GW._SY304_CB446171261_.jpg"
+                        id="3223rf2"
+                        title="Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)"
+                        price={13990}
+                        image="https://images-na.ssl-images-amazon.com/images/I/61-qRZcK23L._SL1500_.jpg"
                         rating={5}
                     />
                     <Product
-                        id="34wer334"
-                        title="Basic Aurdino"
-                        price={999}
-                        image="https://m.media-amazon.com/images/I/41ZYd7GggCL._AC_SY200_.jpg"
+                        id="34er334"
+                        title="Bourge Men's Grada-15 Floaters"
+                        price={299}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71EoFcVUMZL._UL1500_.jpg"
                         rating={5}
                     />
                     <Product
-                        id="23r9u4"
-                        title="Mi band 5"
-                        price={550}
-                        image="https://m.media-amazon.com/images/I/41+Y1oz4TML._AC_SY200_.jpg"
+                        id="23rk9u4"
+                        title="OnePlus Nord 5G (Gray Onyx, 8GB RAM, 128GB Storage)"
+                        price={27999}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71cxfqBoTgL._SL1500_.jpg"
                         rating={4}
                     />
                     <Product
                         id="3sdf3334"
-                        title="i-phone XR"
-                        price={100000}
-                        image="https://m.media-amazon.com/images/I/31348z5DSJL.__AC_SY200_.jpg"
+                        title="Redmi 9 Power (Mighty Black 4GB RAM 64GB Storage) - 6000mAh Battery | 48MP Quad Camera"
+                        price={10999}
+                        image="https://images-na.ssl-images-amazon.com/images/I/71Mg51D9C6L._SL1500_.jpg"
                         rating={4}
                     />
                     <Product
                         id="341er34"
-                        title="Mixer Juicer by butterfly"
+                        title="boAt Airdopes 121v2 TWS Earbuds with Bluetooth V5.0, Immersive Audio, Up to 14H Total Playback, Instant Voice Assistant, Easy Access Controls with Mic and Dual Tone Ergonomic Design(Active Black)"
                         price={1200}
-                        image="https://m.media-amazon.com/images/I/31Y4580jrOL.__AC_SY200_.jpg"
+                        image="https://images-na.ssl-images-amazon.com/images/I/71ByNT34bfL._SL1500_.jpg"
                         rating={3}
                     />
                     <Product
-                        id="123e3334"
+                        id="123e334"
                         title="Amazon Brand - Mama Bear Plant Based Baby Laundry Detergent Liquid - 500 ml"
                         price={240}
                         image="https://m.media-amazon.com/images/I/41S6GGCVdsL.jpg"
@@ -52,23 +52,23 @@ class Home extends Component {
                     />
                     <Product
                         id="41e23r3"
-                        title="Hawkins Contura Hard Anodised Aluminium Pressure Cooker, 3.5 Litres, Black blue yellow orange pink sjyblue voilet brown coralredtomato"
-                        price={1200}
+                        title="Hawkins Contura Hard Anodised Aluminium Pressure Cooker, 3.5 Litres"
+                        price={599}
                         image="https://m.media-amazon.com/images/I/51RNzqVxOvL._AC_UL320_.jpg"
                         rating={4}
                     />
                     <Product
                         id="3r3f334"
-                        title="Echo dot"
-                        price={5000}
-                        image="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/2019/Herotator/MSO-MAY/01_Dashboard-QC-Card_1xc._SY116_CB432126548_.jpg"
+                        title="TIMEWEAR Analogue Men's Watch (Silver Colored Strap)"
+                        price={379}
+                        image="https://images-na.ssl-images-amazon.com/images/I/81abyE45yZL._UL1500_.jpg"
                         rating={5}
                     />
                     <Product
-                        id="34er33"
-                        title="Badminton racket"
-                        price={150}
-                        image="https://m.media-amazon.com/images/I/41YRuJRHybL._AC_SY200_.jpg"
+                        id="34ehr33"
+                        title="realme Band (Black) - Full Colour Screen with Touchkey, Real-time Heart Rate Monitor, in-Built USB Charging, IP68 Water Resistant"
+                        price={1598}
+                        image="https://images-na.ssl-images-amazon.com/images/I/61-%2BzVZL4LL._SL1500_.jpg"
                         rating={4}
                     />
                 </div>

@@ -1,6 +1,6 @@
 .product {
   width: 340px;
-  height: 400px;
+  height: 420px;
   max-width: 350px;
   max-height: 450px;
   display: flex;
@@ -21,7 +21,7 @@
   font-size: 1.2rem;
   color: rgb(28, 94, 236);
   max-width: 270px;
-  max-height: 80px;
+  max-height: 60px;
   overflow: hidden;
   cursor: pointer;
 }
