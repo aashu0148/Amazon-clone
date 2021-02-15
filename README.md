@@ -12,3 +12,6 @@ step-5: run npm start to run it in your computer.
 
 
 STEP-6: PLEASE GIVE YOUR FEEDBACK ABOUT IT.
+
+
+![Amazon-Clone](Amazon-Clone-1.gif)
